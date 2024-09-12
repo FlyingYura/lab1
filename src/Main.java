@@ -30,7 +30,7 @@ class Lucas {
         return curr;
     }
 
-    public static int powpow(int n) {
+    public static int calcSum(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
             Lucas lucas = new Lucas(i);
@@ -57,7 +57,7 @@ public class Main {
             System.out.println("L(" + lucasNumbers[i].getNumber() + ") = " + lucasNumbers[i].getValue());
         }
 
-        int sumSquares = Lucas.powpow(N);
+        int sumSquares = Lucas.calcSum(N);
         System.out.println("Сума квадратів перших " + N + " чисел Люка: " + sumSquares);
 
         scanner.close();
