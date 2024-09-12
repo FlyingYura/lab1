@@ -4,6 +4,10 @@ class Lucas {
     private int number;
     private int value;
 
+    /**
+     * Конструктор ініціалізації
+     * @param number
+     */
     public Lucas(int number) {
         this.number = number;
         this.value = calcLucas(number);
@@ -16,6 +20,12 @@ class Lucas {
     public int getValue() {
         return value;
     }
+
+    /**
+     * Метод для обчислення/знаходження чисел Люка за номером
+     * @param n
+     * @return
+     */
 
     private int calcLucas(int n) {
         if (n == 0) return 2;
@@ -30,6 +40,11 @@ class Lucas {
         return curr;
     }
 
+    /**
+     * Метод для обчислення суми квадратів N чисел Люка
+     * @param n
+     * @return
+     */
     public static int calcSum(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
